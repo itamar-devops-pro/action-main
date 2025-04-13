@@ -15,7 +15,7 @@ jobs:
         name: Execução de Custom Action
         steps:
             - name: Adicionando Compentário
-              uses: itamar-devops-pro/action-main@main
+              uses: itamar-devops-pro/action-js@main
               with:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 issue-id: ${{ github.event.issue.number }}
