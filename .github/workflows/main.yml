@@ -1,1 +1,19 @@
 
+name: "Teste de Action"
+on:
+    issues:
+        types: [opened]
+    pull_request:
+        types: [opened]
+
+jobs:
+    teste-action-job:
+        runs-on: ubuntu-lates
+        name: Execução de Custom Action
+        steps:
+            - name: Adicionando Compentário
+              uses: itamar-devops-pro/action-main@main
+              with:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                issue-id: ${{ github.event.issue.number }}
+                comment: "Teste de comentário"
