@@ -8,6 +8,9 @@ on:
 
 jobs:
     teste-action-job:
+        permissions:
+            issues: write
+            pull-requests: write
         runs-on: ubuntu-lates
         name: Execução de Custom Action
         steps:
