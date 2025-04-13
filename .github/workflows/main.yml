@@ -23,4 +23,4 @@ jobs:
                 comment: "Teste de comentário"
             - name: Mostrar o id do comentário
               run: |
-                echo "ID do comentário é: ${{ steps.comment_step.outputs.comement-id }}"
+                echo "ID do comentário é: ${{ steps.comment_step.outputs.comment-id }}"
