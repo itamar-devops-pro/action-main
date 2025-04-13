@@ -11,7 +11,7 @@ jobs:
         permissions:
             issues: write
             pull-requests: write
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         name: Execução de Custom Action
         steps:
             - name: Adicionando Compentário
